@@ -280,3 +280,7 @@ img {
        padding-right: 5px;
       
    }
+
+   .per_Det{
+        display: flex;
+}
