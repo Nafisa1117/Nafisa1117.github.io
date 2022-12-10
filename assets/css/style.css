@@ -284,3 +284,72 @@ img {
    .per_Det{
         display: flex;
 }
+
+
+#git_curStats{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    gap: 10px;
+    grid-template-areas: 
+    "a b c";
+
+}
+.stast1{
+    grid-area: a;
+}
+
+.stast2{
+    grid-area: b;
+}
+
+.stast3{
+    grid-area: c;
+}
+
+@media all and (min-width:68px) and (max-width:992px) {
+    #git_curStats{
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap: 10px;
+        grid-template-areas: 
+        "a"
+        "b"
+        "c";
+    }
+    
+}
+
+.pic_small_screen{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    /* border: 1px solid red ; */
+    /* box-shadow: #deff58(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+.pic_small_screen > img{
+    border: 12px solid #deff58 ;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    height: 300px;
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+@media all and (min-width: 992px) and (max-width:4000px) {
+        .pic_small_screen{
+            display: none;
+        }
+        .pic_small_screen > img{
+            display: none;
+        }
+}
